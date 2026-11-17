@@ -1,39 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Giới thiệu bản thân</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân - Đinh Sơn Hải</title>
+
     <style>
         body {
-            font-family: Arial;
-            background-color: lightblue;
+            margin: 0;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            color: #222222;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 30px 20px;
             text-align: center;
+            border-bottom: 1px solid #dddddd;
         }
 
-        h1 {
-            color: blue;
+        header h1 {
+            color: #111111;
+            font-size: 36px;
+            margin: 0;
         }
 
-        p {
+        header p {
+            color: #666666;
             font-size: 18px;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        nav a {
+            color: #222222;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .gioithieu {
+            background-color: #fafafa;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .anh-daidien {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #dddddd;
+            margin-bottom: 15px;
+        }
+
+        .gioithieu h2 {
+            color: #111111;
+            font-size: 30px;
+            margin: 8px 0;
+        }
+
+        .gioithieu p {
+            font-size: 18px;
+            color: #444444;
+            max-width: 600px;
+            margin: 15px auto 0 auto;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        section h2 {
+            color: #111111;
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #333333;
+            margin: 10px 0;
+        }
+
+        .nut {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 10px;
+            margin-right: 10px;
+            background-color: #222222;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .nut:hover {
+            background-color: #555555;
+        }
+
+        /* ========================================= */
+        /* CSS MỚI CHO KHUNG VIDEO v1.mp4 */
+        /* ========================================= */
+        .khung-video {
+            max-width: 720px;
+            margin: 20px auto 0;
+            background-color: #fafafa;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #dddddd;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .khung-video video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+            background-color: #000;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 25px;
+            text-align: center;
+            color: #666666;
+            border-top: 1px solid #dddddd;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>GIỚI THIỆU BẢN THÂN</h1>
+    <header>
+        <h1>Đinh Sơn Hải</h1>
+        <p>Trang web giới thiệu bản thân</p>
+    </header>
 
-    <h2>Xin chào mọi người!</h2>
+    <nav>
+        <a href="#trangchu">Trang chủ</a>
+        <a href="#gioithieu">Thông tin</a>
+        <a href="#sothich">Sở thích</a>
+        <a href="#muctieu">Mục tiêu</a>
+        <a href="#lienhe">Liên hệ</a>
+    </nav>
 
-    <p>Mình tên là Đinh Sơn Hải.</p>
+    <div class="gioithieu" id="trangchu">
+        <img src="a1.jpg" alt="Ảnh đại diện Đinh Sơn Hải" class="anh-daidien">
+        <h2>Xin chào! Mình là Đinh Sơn Hải</h2>
+        <p>
+            Chào mừng mọi người đã ghé thăm trang web cá nhân của mình.
+            Rất vui được làm quen và kết nối với tất cả mọi người!
+        </p>
+    </div>
 
-    <p>Mình hiện đang học lớp 12A2.</p>
+    <section id="gioithieu">
+        <h2>01. Thông tin cá nhân</h2>
+        <p><b>Họ và tên:</b> Đinh Sơn Hải</p>
+        <p><b>Ngày sinh:</b> 01/05/2009</p>
+        <p><b>Số điện thoại:</b> 0332278702</p>
+        <p><b>Email:</b> sonhaidinh246@gmail.com</p>
+    </section>
 
-    <p>Trường THPT Hòn Gai, tỉnh Quảng Ninh.</p>
+    <section id="sothich">
+        <h2>02. Sở thích</h2>
+        <p>
+            Mình yêu thích khám phá công nghệ, nghe nhạc thư giãn,
+            tham gia các hoạt động thể thao và trải nghiệm những điều mới mẻ mỗi ngày.
+        </p>
+    </section>
 
-    <h2>Lời giới thiệu</h2>
+    <section id="muctieu">
+        <h2>03. Ước mơ và mục tiêu</h2>
+        <p>
+            Không ngừng học hỏi, hoàn thiện bản thân và nỗ lực hết mình
+            để đạt được những mục tiêu đã đề ra trong học tập cũng như cuộc sống.
+        </p>
+    </section>
 
-    <p>Rất vui được làm quen với mọi người!</p>
+    <section id="lienhe">
+        <h2>04. Thông tin liên hệ</h2>
+        <p>Số điện thoại: 0332278702</p>
+        <p>Email: sonhaidinh246@gmail.com</p>
+
+        <a class="nut" href="tel:0332278702">Gọi điện</a>
+        <a class="nut" href="mailto:sonhaidinh246@gmail.com">Gửi Email</a>
+    </section>
+
+    <!-- Section mới: Video giới thiệu -->
+    <section id="video">
+        <h2>05. Video giới thiệu</h2>
+        <p>Cùng xem một video ngắn về mình nhé!</p>
+
+        <div class="khung-video">
+            <!-- Nhớ để file v1.mp4 cùng thư mục với file HTML này -->
+            <video src="v1.mp4" controls poster="a1.jpg" preload="metadata">
+                Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 - Website giới thiệu bản thân | Đinh Sơn Hải</p>
+    </footer>
 
 </body>
 </html>
